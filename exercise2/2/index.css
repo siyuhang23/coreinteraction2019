@@ -1,48 +1,15 @@
-html,body{
-  background-color: black;
+body {
+  font-size: 60px;
+font-weight: bold;
+  text-align: center;
+    background: url("giphy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-#navigation{
-  width: 600px;
-  height: 100%;
-  margin: 0 10% 0 10%;
-  padding:0 10px 0 10px;
-  background-color: #FF0000;
-  float: center;
-}
 
-#navigation.top{
-  width: 100%;
-  height: auto;
-  padding:10px 0px 10px 0px;
-  margin: 0px 0px 0px 0px;
-display: table;
-}
-
-#logo{
-  color: black;
-  font-family: times new roman, sans-serif;
-}
-
-#logo h1{
-  margin:0px 0px 0px 0px;
-  padding:10px 0px 10px 0px;
-  font-size: 51px;
-  line-height: 60px;
-}
-
-.nav-link{
-  background-color: black;
-  margin: 0px 0px 10px 0px;
-  padding:10px 10px 10px 10px;
-}
-
-.nav-link a{
-  color:#FF0000;
-  font-size: 25px;
-  line-height: 35px;
-}
 
 #contact{
 color:green;
