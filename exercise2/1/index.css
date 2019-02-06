@@ -1,0 +1,71 @@
+html,body{
+  background-color: black;
+}
+
+
+#navigation{
+  width: 600px;
+  height: 100%;
+  margin: 0 10% 0 10%;
+  padding:0 10px 0 10px;
+  background-color: #FF0000;
+  float: center;
+}
+
+#navigation.top{
+  width: 100%;
+  height: auto;
+  padding:10px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
+display: table;
+}
+
+#logo{
+  color: black;
+  font-family: times new roman, sans-serif;
+}
+
+#logo h1{
+  margin:0px 0px 0px 0px;
+  padding:10px 0px 10px 0px;
+  font-size: 51px;
+  line-height: 60px;
+}
+
+.nav-link{
+  background-color: black;
+  margin: 0px 0px 10px 0px;
+  padding:10px 10px 10px 10px;
+}
+
+.nav-link a{
+  color:#FF0000;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+#contact{
+color:green;
+font-size: 20px;
+line-height: 25px;
+font-family: times new roman, sans-serif;
+margin: 30px 10px 0px 0px;
+width: 20%
+
+}
+
+
+
+#contact1{
+color:white;
+font-size: 30px;
+font-family: times new roman, sans-serif;
+margin: -400px -40px 0px 900px;
+width: 20%
+
+}
+
+#k{
+  margin: 0px -40px 0px 900px;
+
+}
