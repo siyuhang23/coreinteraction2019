@@ -1,0 +1,18 @@
+#background{
+  content-box: radial-gradient(crimson, skyblue);
+}
+#logo{
+  color:#001a00;
+  background-color:#009900;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 24px;
+}
+
+.nav-link{
+  color:#fe9800;
+  background-color: #ff6699;
+  margin: 5%;
+  font-family:'Time New Roman', serif;
+  font-size: 26px;
+  line-height: 35px;
+}
