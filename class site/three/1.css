@@ -1,0 +1,28 @@
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	background-color: white;
+
+}
+*{
+	box-sizing:border-box;
+}
+
+main{
+	width:100%;
+	height:100%;
+	float:left;
+
+
+}
+
+main section{
+	border-style: solid;
+	width:33%;
+	height:50%;
+	float:left;
+	border-color: #625750;
+
+
+}

@@ -1,0 +1,24 @@
+body{
+    background: #cc7a00 no-repeat fixed center; 
+  }
+#topic{
+  float:right;
+  color:#776644;
+  background-color: #ccaaee;
+}
+
+#contact{
+  width: 200px;
+  height: 80%;
+  margin: 70px 10% 0 0;
+  float: left;
+  color:black;
+  background-color: #FFFF00;
+  font-family: Helvetice sans-serif;
+  width: 50%;
+}
+
+.words{
+  background-color:#986E48;
+  color:#894F05;
+}

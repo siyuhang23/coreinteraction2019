@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+<title>background-repeat</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,
+user-scalable=no">
+<link rel="stylesheet" type="text/css" href="color.css"/>
+
+<style>
+body{
+  background-color:#13060d;
+  background-image: url(color.jpg);
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+
+
+<body>
+
+  <div id="content">
+    <h1>The background-repeat property sets if/how a background image will be repeated.</h1>
+
+    By default, a background-image is repeated both vertically and horizontally.
+    <div>Tip: The background image is placed according to the background-position property. If no background-position is specified, the image is always placed at the element's top left corner.</div>
+
+<div><h3>Examples:</h3></div>
+<div>
+  1. body {
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+</div>
+
+<div>
+  2. .hero-image {
+    background-image: url("photographer.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+</div>
+
+<div>
+  3. #grad1 {
+  height: 200px;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+}
+</div>
+</div>
+
+</body>
+</html>

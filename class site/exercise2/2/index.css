@@ -1,0 +1,38 @@
+body {
+  font-size: 60px;
+font-weight: bold;
+  text-align: center;
+    background: url("giphy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+#contact{
+color:green;
+font-size: 20px;
+line-height: 25px;
+font-family: times new roman, sans-serif;
+margin: 30px 10px 0px 0px;
+width: 20%
+
+}
+
+
+
+#contact1{
+color:white;
+font-size: 30px;
+font-family: times new roman, sans-serif;
+margin: -400px -40px 0px 900px;
+width: 20%
+
+}
+
+#k{
+  margin: 0px -40px 0px 900px;
+
+}
