@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUNDAY</title>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link rel="stylesheet">
+
+  <style>
+
+  body{
+    background-image:url(77.gif);
+    background-size: cover;
+    background-repeat:repeat;
+  }
+
+  .shape{
+      position: fixed;
+  }
+  .pressstart{
+  font-family: 'Press Start 2P', cursive;
+  }
+
+  p.topa{
+    float: left;
+    position: absolute;
+    border-style:solid;
+    border-width:0;
+    width:500px;
+    height:30px;
+    margin: 200px 0 0 110px;
+    padding:10px 0 0 7px;
+    color: #ff6600;
+    background-color: black;
+  }
+
+ p.windowa{
+float:left;
+position: absolute;
+border-style: double;
+border-width: 2px;
+width:503px;
+height:503px;
+margin:240px 0 0 110px;
+}
+.night{
+  float: left;
+  position:absolute;
+  margin: 240px 0 0 110px;
+}
+
+p.topb{
+  float: left;
+  position: absolute;
+  border-style:solid;
+  border-width:0;
+  width:500px;
+  height:35px;
+  margin: 260px 0 0 680px;
+  padding:10px 0 0 7px;
+  color: #ff6600;
+  background-color: black;
+}
+
+p.windowb{
+float:left;
+position: absolute;
+border-style: double;
+border-width: 2px;
+width:503px;
+height:400px;
+margin:270px 0 0 680px;
+}
+
+.moon{
+  float:left;
+  position:absolute;
+  margin:-600px 0 0 400px;
+  opacity:0.7;
+ filter: alpha(opacity=70);
+}
+
+.cd{
+  float:left;
+  position:absolute;
+  margin:-410px 0 0 960px;
+  opacity:0.7;
+ filter: alpha(opacity=70);
+}
+
+.content{
+  float: left;
+  text-align: center;
+  position: absolute;
+  font-size: 85px;
+  letter-spacing: -5px;
+  color:#990000;
+}
+button{
+  width: 100px;
+  height: 50px;
+  border-radius:80px;
+  background-color: #b3ff1a;
+  font-size: 15px;
+  color:#ff00aa;
+  font-style: oblique;
+}
+</style>
+
+
+<body>
+  <div class="pressstart">
+  <button onclick="goBack()">RETURN</button>
+  <p class="topa">CHILL NIGHT.jpg</p>
+  <p class="windowa"></p>
+  <p class="topb">playing:SKY-Drop.mp4</p>
+  <p class="windowb"></p>
+  <p class="content">FREE AS THE WIND</p>
+  <div class="night">
+<img src="night.jpeg" width="505px" height="505px" >
+
+<div class="moon">
+  <img src="moon7.gif" width="180px" height="180px">
+</div>
+
+<div class="cd">
+<img src="cd7.gif" width="100px" height="100px">
+<img src="cd7.gif" width="100px" height="100px">
+<img src="cd7.gif" width="100px" height="100px">
+</div>
+</div>
+</body>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</html>
