@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title> sabrinahang</title>
-    </head>
-
-    <body>
-      <h1>exercise4</h1>
-      <a href="exercise4/index.html">Exercise4</a>
-    </body>
+ <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/JavaScript" src="index.js"></script>
 
 
-      </html>
+ <title>Exercise 4</title>
+
+	<script>
+	    function updateTimeConditional() {
+	        var timeHolder = document.querySelector("#timeConditionalHolder");
+			var hoursh0=document.querySelector("#hours0");
+			var hoursh1=document.querySelector("#hours1")
+			var minutesh0=document.querySelector("#minutes0");
+			var minutesh1=document.querySelector("#minutes1");
+			var secondsh0=document.querySelector("#seconds0");
+	        var secondsh1=document.querySelector("#seconds1");
+
+	        var now = new Date()
+	        var time = now.toTimeString()
+
+
+
+	        hours=now.getHours()
+	        seconds=now.getSeconds()
+	        minutes=now.getMinutes()
+
+			str_hour=hours.toString();
+			str_hour_len=str_hour.length;
+			if(str_hour_len==1){
+				one=0;
+				two=parseInt(str_hour[0]);
+			}else{
+				one=str_hour[0];
+				two=str_hour[1];
+			}
+			str_minutes=minutes.toString();
+			str_minutes_len=str_minutes.length;
+			if(str_minutes_len==1){
+				three=0;
+				four=str_minutes[1];
+			}else{
+				three=str_minutes[0];
+				four=str_minutes[1];
+			}
+
+			str_seconds=seconds.toString();
+			str_seconds_len=str_seconds.length;
+			if(str_seconds_len==1){
+				five=0;
+				six=str_seconds[0];
+			}else{
+				five=str_seconds[0];
+				six=str_seconds[1];
+			}
+
+
+
+			console.log(one,two,three,four,five,six);
+	        status1=(255-3*seconds+hours+1);
+	        status2=(255-3*seconds+minutes+1);
+	        status3=(0+4*seconds+1);
+	        mcolor1="rgb("+status3+","+status2+","+status1+")";
+	        mcolor2="rgb("+status1+","+status2+","+status3+")";
+	        mcolor3="rgb("+status2+","+status1+","+status3+")";
+
+			var mcolor=new Array()
+	    mcolor[0]="#99cc00";
+			mcolor[1]="#9900cc";
+			mcolor[2]="#cc00ff";
+			mcolor[3]="#ff33ff";
+			mcolor[4]="#b366ff";
+			mcolor[5]="#ff99ff";
+			mcolor[6]="#ff9999";
+			mcolor[7]="#bfff00";
+			mcolor[8]="#33ff33";
+			mcolor[9]="#66ffff";
+
+
+	        console.log(status);
+
+	        hoursh0.style.color=mcolor[one];
+			hoursh1.style.color=mcolor[two];
+	        minutesh0.style.color=mcolor[three];
+			minutesh1.style.color=mcolor[four];
+	        secondsh0.style.color=mcolor[five];
+	        secondsh1.style.color=mcolor[six];
+
+	        hoursh0.style.backgroundColor=mcolor[one];
+			hoursh1.style.backgroundColor=mcolor[two];
+	        minutesh0.style.backgroundColor=mcolor[three];
+			minutesh1.style.backgroundColor=mcolor[four];
+	        secondsh0.style.backgroundColor=mcolor[five];
+			secondsh1.style.backgroundColor=mcolor[six];
+
+
+	    }
+
+	    setInterval(updateTimeConditional, 1000)
+	</script>
+	<body>
+		<center>
+		<h2 id="timeConditionalHolder"></h2>
+		<span style="color:#99cc00;font-size:30px;">0</span>
+		<span style="color:#9900cc;font-size:60px">1</span>
+		<span style="color:#cc00ff;font-size:30px">2</span>
+		<span style="color:#ff33ff;font-size:60px">3</span>
+		<span style="color:#b366ff;font-size:30px">4</span>
+		<span style="color:#ff99ff;font-size:60px">5</span>
+		<span style="color:#ff9999;font-size:30px">6</span>
+		<span style="color:#bfff00;font-size:60px">7</span>
+		<span style="color:#33ff33;font-size:30px">8</span>
+		<span style="color:#66ffff;font-size:60px">9</span>
+		<h1 id="bone">
+			<span id="hours0">" "</span>
+      <span id="hours1">" "</span>:
+			<span id="minutes0">" "</span>
+      <span id="minutes1">" "</span>:
+			<span id="seconds0">" "</span>
+      <span id="seconds1">" "</span>
+		</h1>
+</center>
+</body>
+</html>
