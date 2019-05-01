@@ -1,13 +1,117 @@
-<!DOCTYPE html>
 <html>
-    <head>
-      <title> sabrinahang</title>
-    </head>
+<head>
+    <title>JS/JQUERY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
 
-    <body>
-      <h1>exercise5</h1>
-      <a href="exercise5/index.html">Exercise5</a>
-    </body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color:#ac39ac;
+    }
+
+    #circle {
+        position: absolute;
+        border-radius: 100px;
+        width: 190px;
+        height: 190px;
+        background-color:#ccac00;
+        top:100px;
+        left: 100px;
+        transition: 2s ease;
+    }
 
 
-      </html>
+    #circleone {
+            position: absolute;
+            border-radius: 100px;
+            width: 110px;
+            height: 110px;
+            background-color:#4dff88;
+            top:180px;
+            left: 20px;
+            transition: 2s ease;
+        }
+
+
+    #circletwo{
+                position: absolute;
+                border-radius: 100px;
+                width: 160px;
+                height:180px;
+                background-color:#ff751a;
+                top:100px;
+                left: 100px;
+                transition: 1s ease;
+            }
+
+
+    #circlefour{
+                        position: absolute;
+                        border-radius: 100px;
+                        width: 129px;
+                        height:129px;
+                        background-color:#009999;
+                        top:100px;
+                        left: 100px;
+                        transition: 2s ease;
+                    }
+
+
+
+
+    #diamond{
+      width: 0;
+      height: 0;
+      border: 150px solid transparent;
+      border-bottom: 150px solid #c6538c;
+      position: relative;
+      top: -50px;
+      left: 150px;
+      transition: 1s ease;
+    }
+
+  #square{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color:#8cff1a;
+    color: black;
+    top:200px;
+    left: 200px;
+    transition: 1.5s ease;
+}
+
+  #circle3{
+    position:fixed;
+    transition: 2s ease;
+    border-bottom: 140px solid;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    height: 0;
+    width:40px;
+    color: brown;
+    transition: 1s ease;
+}
+
+
+
+
+</style>
+
+<body>
+    <div id="circle"></div>
+    <div id="diamond"></div>
+    <div id="square"></div>
+    <div id="circle3"></div>
+    <div id="circleone"></div>
+    <div id="circletwo"></div>
+    <div id="circlefour"></div>
+
+    </div>
+   </body>
+</html>
