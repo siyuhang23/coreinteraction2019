@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<style>
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  animation: colors 10s ease-in alternate infinite forwards;
+}
+
+@keyframes colors{
+  0% {
+        background:#ffffff;
+  }
+
+  15%{
+       filter: contrast(30%);
+  }
+  30% {
+       background:#9900cc;
+  }
+
+  50%{
+         filter: contrast(70%);
+}
+
+  100% {
+    background:black;
+  }
+}
+
+#element{
+  background-image:url(pic/1.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:450px;
+  height:450px;
+  margin: -10px 0 0 2px;
+  animation: roll 2s infinite;
+  transform: rotate(30deg);
+  display: inline-block;
+}
+
+@keyframes roll{
+  0%{
+    transform: rotate(0);
+  }
+
+    100%{
+      transform: rotate(360deg);
+  }
+}
+
+
+
+#two{
+  background-image:url(pic/2.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:900px;
+  height:900px;
+  margin: 110px 0 0 2px;
+}
+
+#three{
+  background-image:url(pic/3.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:1000px;
+  height:1000px;
+  margin: 150px 0 0 2px;
+  -webkit-animation:rotation 20s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+#four{
+  background-image:url(pic/4.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:1000px;
+  height:1000px;
+  margin: 150px 0 0 2px;
+  animation: roll 5s infinite;
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+@keyframes roll{
+  0%{
+    transform: rotate(360deg);
+  }
+
+    100%{
+      transform: rotate(0);
+  }
+}
+}
+
+#five{
+  background-image:url(pic/5.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:500px;
+  height:500px;
+  margin: -300px 0 0 -480px;
+}
+
+
+#six{
+  background-image:url(pic/6.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:600px;
+  height:600px;
+  margin: 1200px 0 0 -50px;
+  -webkit-animation:rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(360deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+}
+
+
+#nine{
+  background-image:url(pic/9.png);
+  float: left;
+  position:fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:1000px;
+  height:1000px;
+  margin: -100px 0 0 2px;
+}
+
+#ten{
+  background-image:url(pic/10.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:1000px;
+  height:1000px;
+  margin: 500px 0 0 400px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: shimmy 2s infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(69px, 200px);
+  }
+}
+
+#oneone{
+  background-image:url(pic/11.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:300px;
+  height:300px;
+  margin: -200px 0 0 300px;
+}
+
+#onetwo{
+  background-image:url(pic/12.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:200px;
+  height:200px;
+  margin: 1000px 0 0 -100px;
+  -webkit-animation:rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(360deg);
+  }
+  to {
+      -webkit-transform: rotate(40deg);
+  }
+}
+</style>
+
+<body>
+<div id="three"></div>
+<div id="four"></div>
+<div id="five"></div>
+<div id="oneone"></div>
+<div id="six"></div>
+<div id="ten"></div>
+<div id="nine"></div>
+<div id="two"></div>
+<div id="onetwo"></div>
+<div id="element"></div>
+
+
+
+
+
+</body>
+</html>
