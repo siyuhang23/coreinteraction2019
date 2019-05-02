@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>第二圖</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="cover.js"></script>
+
+
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#f4acb7;
+}
+.one{
+  margin: 200px 0 0 500px;
+}
+
+.font{
+  font-family: 'Noto Serif SC', serif;
+}
+
+.line{
+    position:fixed;
+    font-size: 23px;
+    color:#906f78;
+    top:560px;
+    left:400px;
+    width: 15.6px;
+    border-right: 1.5px;
+    text-align:left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    display: block;
+
+
+}
+
+.welcome-message-anim{
+    animation: typeMsg 4s steps(40) 1s 1 normal both,cursorAnim 200ms steps(40) infinite normal;
+}
+
+@keyframes typeMsg{
+    from{
+        width: 0em;
+    }
+    to{
+        width: 40em;
+    }
+}
+
+@keyframes cursorAnim{
+    from{
+        border-right-color:black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+
+.pic{
+  top:80px;
+  left:300px;
+  position: fixed;
+}
+
+div.backBtn {
+  width: 100px;
+  left: 100px;
+  top: 100px;
+  background-color: #f2f2f2;
+  transition: all 0.4s ease;
+  position: fixed;
+  cursor: pointer;
+}
+
+span.line {
+  bottom: auto;
+  right: auto;
+  top: auto;
+  left: auto;
+  background-color:#f2f2f2;
+  border-radius: 10px;
+  width: 100%;
+  left: 0px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color 0.2s ease;
+}
+
+span.tLine {
+  top: 0px;
+}
+
+span.mLine {
+  top: 13px;
+  opacity: 0;
+}
+
+span.bLine {
+  top: 26px;
+}
+
+.back {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease;
+  font-size: 1em;
+  color:white;
+}
+
+div.backBtn:hover span.label {
+  left: 25px
+}
+
+div.backBtn:hover span.line {
+  left: -10px;
+  height: 5px;
+  background-color:white;
+}
+
+div.backBtn:hover span.tLine {
+  width: 25px;
+  transform: rotate(-45deg);
+  left: -15px;
+  top: 6px;
+}
+
+div.backBtn:hover span.mLine {
+  opacity: 1;
+  width: 30px;
+}
+
+div.backBtn:hover span.bLine {
+  width: 25px;
+  transform: rotate(45deg);
+  left: -15px;
+  top: 20px;
+}
+
+
+</style>
+<body>
+  <div class="font">
+
+  <div class="pic">
+    <img src="flowers/3.PNG" width="400px" height="500px">
+    <h1 class="line welcome-message-anim">
+    四月*春季<br>
+    这个周六的阳光暖洋洋的洒在有空气的地方，走进一家不知名的花店<br>
+    花店的老板是一位韩国人，黝黑的低马尾，流利又缓慢的韩语，旁边是她的妈妈或她的婆婆。<br>
+    我让老人家帮我找了一张相片，老人家和蔼地笑着答应了。<br>
+    春天真好。柔柔的风里透着花的味道。<br>
+    云朵们在风里，荡啊荡，晃啊晃，打着可爱的小卷儿。</h1>
+  </div>
+
+  <button onclick="goBack()">
+  <div class="backBtn">
+        <span class="line tLine"></span>
+        <span class="line mLine"></span>
+        <span class="back">Back to</span>
+        <span class="line bLine"></span>
+  	</div>
+  </button>
+
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+
+    </div>
+</body>
+</html>

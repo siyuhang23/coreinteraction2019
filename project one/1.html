@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>第一圖</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="cover.js"></script>
+
+
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.one{
+  margin: 200px 0 0 500px;
+}
+
+.font{
+  font-family: 'Noto Serif SC', serif;
+}
+
+.line{
+    position:fixed;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 22px;
+    top:210px;
+    left:100px;
+    width: 10px;
+    color:white;
+    border-right: 1px solid white;
+    text-align:left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.welcome-message-anim{
+    animation: typeMsg 4s steps(40) 1s 1 normal both,cursorAnim 200ms steps(40) infinite normal;
+}
+
+@keyframes typeMsg{
+    from{
+        width: 0em;
+    }
+    to{
+        width: 27em;
+    }
+}
+
+@keyframes cursorAnim{
+    from{
+        border-right-color:black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+
+.two{
+  width: 350px;
+  height:350px;
+  background-image: url(flowers/1.jpg);
+  background-size: cover;
+  position: fixed;
+  opacity:0.5;
+  filter: alpha(opacity=50);
+  top: 400px;
+  left: 800px;
+}
+
+
+div.backBtn {
+  width: 100px;
+  left: 100px;
+  top: 100px;
+  background-color: #f2f2f2;
+  transition: all 0.4s ease;
+  position: fixed;
+  cursor: pointer;
+}
+
+span.line {
+  bottom: auto;
+  right: auto;
+  top: auto;
+  left: auto;
+  background-color:#f2f2f2;
+  border-radius: 10px;
+  width: 100%;
+  left: 0px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color 0.2s ease;
+}
+
+span.tLine {
+  top: 0px;
+}
+
+span.mLine {
+  top: 13px;
+  opacity: 0;
+}
+
+span.bLine {
+  top: 26px;
+}
+
+.back {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease;
+  font-size: 1em;
+  color:white;
+}
+
+div.backBtn:hover span.label {
+  left: 25px
+}
+
+div.backBtn:hover span.line {
+  left: -10px;
+  height: 5px;
+  background-color:white;
+}
+
+div.backBtn:hover span.tLine {
+  width: 25px;
+  transform: rotate(-45deg);
+  left: -15px;
+  top: 6px;
+}
+
+div.backBtn:hover span.mLine {
+  opacity: 1;
+  width: 30px;
+}
+
+div.backBtn:hover span.bLine {
+  width: 25px;
+  transform: rotate(45deg);
+  left: -15px;
+  top: 20px;
+}
+
+</style>
+
+<body>
+  <div class="font">
+
+  <div class="one">
+    <img src="flowers/1.jpg" width="500px" height="500px">
+    <h1 class="line welcome-message-anim">
+    人们都说黑色的著裝象征着纽约这座快速涌动的城市;<br>
+    华丽的，窒息的，永不凋零的,加速器一般的運作著;<br>
+    我們總是想要快點走，快點再快點...<br>
+    对时间感念差的我就像個老婆婆；慢慢悠悠，吊儿郎当。</h1>
+  </div>
+
+<div class="two"></div>
+
+<button onclick="goBack()">
+<div class="backBtn">
+      <span class="line tLine"></span>
+      <span class="line mLine"></span>
+      <span class="back">Back to</span>
+      <span class="line bLine"></span>
+	</div>
+</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+    </div>
+
+</body>
+</html>
