@@ -1,16 +1,38 @@
 $(document).ready(function(){
 
-   var shapeWidth=$('#five').width();
-   var shapeWidth=$('#twotwo').width();
+   var shapeWidth=$('#onetwo').width();
+   var shapeWidth=$('#onethree').width();
+   var shapeWidth=$('#onefour').width();
+   var shapeWidth=$('#onefive').width();
+   var shapeWidth=$('#onesix').width();
 
    var width=$(document).width()-shapeWidth;
    var height=$(document).height()-shapeWidth;
 
    var speedX=2;
-   var speedY=10;
-
+   var speedY=2;
    var positionLeft=0;
    var positionTop=0;
+
+   var speeda=4;
+   var speedb=2;
+   var positionleft=0;
+   var positiontop=0;
+
+   var speedc=1;
+   var speedd=2;
+   var positionlef=0;
+   var positionto=0;
+
+   var speedfive=4;
+   var speedffive=7;
+   var positionfive=0;
+   var positionffive=0;
+
+   var speedxx=6;
+   var speedyy=2;
+   var positionLeftt=0;
+   var positionTopp=0;
 
    function step(timestamp){
 
@@ -33,11 +55,103 @@ $(document).ready(function(){
        speedY=speedY * -1;
      }
 
-     $('#five').css("left",positionLeft)
-     $('#five').css("top",positionTop)
+     $('#onetwo').css("left",positionLeft)
+     $('#onetwo').css("top",positionTop)
 
-     $('#twotwo').css("left",positionLeft)
-     $('#twotwo').css("top",positionTop)
+
+
+     positionLeftt +=speedxx;
+     positionTopp +=speedyy;
+
+     if(positionLeftt>width){
+       speedxx= speedxx * -1;
+     }
+
+     if(positionLeftt<0){
+       speedxx=speedxx * -1;
+     }
+
+     if(positionTopp>height){
+       speedyy=speedyy * -1;
+     }
+
+     if(positionTopp<0){
+       speedyy=speedyy * -1;
+     }
+
+     $('#onesix').css("left",positionLeftt)
+     $('#onesix').css("top",positionTopp)
+
+
+
+     positionleft +=speeda;
+     positiontop +=speedb;
+
+     if(positionleft>width){
+       speeda= speeda * -1;
+     }
+
+     if(positionleft<0){
+       speeda=speeda * -1;
+     }
+
+     if(positiontop>height){
+       speedb=speedb * -1;
+     }
+
+     if(positiontop<0){
+       speedb=speedb * -1;
+     }
+
+     $('#onethree').css("left",positionleft)
+     $('#onethree').css("top",positiontop)
+
+
+
+          positionlef +=speedc;
+          positionto +=speedd;
+
+          if(positionlef>width){
+            speedc= speedc * -1;
+          }
+
+          if(positionlef<0){
+            speedc=speedc * -1;
+          }
+
+          if(positionto>height){
+            speedd=speedd * -1;
+          }
+
+          if(positionto<0){
+            speedd=speedd * -1;
+          }
+
+     $('#onefour').css("left",positionlef)
+     $('#onefour').css("top",positionto)
+
+
+     positionfive +=speedfive;
+     positionffive +=speedffive;
+
+     if(positionfive>width){
+       speedfive= speedfive * -1;
+     }
+
+     if(positionfive<0){
+       speedfive=speedfive * -1;
+     }
+
+     if(positionffive>height){
+       speedffive=speedffive * -1;
+     }
+
+     if(positionffive<0){
+       speedffive=speedffive * -1;
+     }
+
+$('#onefive').css("left",positionfive)
+$('#onefive').css("top",positionffive)
 
      window.requestAnimationFrame(step);
    }
@@ -45,8 +159,6 @@ $(document).ready(function(){
 
      setInterval(function(){
 
-     getTime(10);
-
-   },800)
+   },1000)
 
 })
