@@ -10,7 +10,6 @@
 </head>
 
 <style>
-
 body {
   display: grid;
   place-items: center;
@@ -20,36 +19,28 @@ body {
 
 @keyframes colors{
   0% {
-        background:#ffffff;
+        background:#e6f7ff;
   }
 
   15%{
-       filter: contrast(30%);
+       filter: contrast(90%);
   }
-  30% {
-       background:#9900cc;
-  }
-
-  50%{
-         filter: contrast(70%);
-}
-
   100% {
-    background:black;
+       background:#BFD294;
   }
 }
 
-#element{
+#one{
   background-image:url(pic/1.png);
   float: left;
   position:fixed;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width:450px;
-  height:450px;
-  margin: -10px 0 0 2px;
-  animation: roll 2s infinite;
+  width:400px;
+  height:400px;
+  margin: 10px 0 0 2px;
+  animation: roll 350s infinite;
   transform: rotate(30deg);
   display: inline-block;
 }
@@ -59,12 +50,10 @@ body {
     transform: rotate(0);
   }
 
-    100%{
+    20%{
       transform: rotate(360deg);
   }
 }
-
-
 
 #two{
   background-image:url(pic/2.png);
@@ -73,9 +62,224 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width:900px;
-  height:900px;
-  margin: 110px 0 0 2px;
+  width:200px;
+  height:200px;
+  margin: -570px 0 0 420px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: shimmy 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(-90px, 30px);
+  }
+}
+
+#ten{
+  background-image:url(pic/10.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:200px;
+  height:200px;
+  margin: 420px 0 0 550px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: ten 3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ten {
+  0% {
+    transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(0, 30px);
+  }
+}
+
+#four{
+  background-image:url(pic/4.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:200px;
+  height:200px;
+  margin: 500px 0 0 -700px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: four 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes four{
+  0% {
+    transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(-10px, 0);
+  }
+}
+
+#five{
+  background-image:url(pic/5.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:200px;
+  height:200px;
+  margin: -570px 0 0 -180px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: shimmy 2s infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(-20px, 30px);
+  }
+}
+
+
+
+#six{
+  background-image:url(pic/6.png);
+  float: left;
+  position:fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:200px;
+  height:200px;
+  margin: 100px 0 0 -800px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: shimmy 2s infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(15px, 40px);
+  }
+}
+
+#eight{
+  background-image:url(pic/8.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:280px;
+  height:280px;
+  margin: -100px 0 0 900px;
+  display: flex;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: eight 4s infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes eight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100px, 0px);
+  }
+}
+
+#seven{
+  background-image:url(pic/7.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:300px;
+  height:300px;
+  margin: 540px 0 0 -50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: seven 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes seven {
+  40% {
+    transform: translate(-20px, 10px);
+  }
+  100% {
+    transform: translate(20px, 10px);
+  }
+}
+
+
+#nine{
+  background-image:url(pic/9.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:300px;
+  height:300px;
+  margin: 60px 0 0 1200px;
+  display: flex;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  animation: eight 2s infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes eight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50px, 2px);
+  }
 }
 
 #three{
@@ -100,107 +304,6 @@ body {
 		}
 }
 
-#four{
-  background-image:url(pic/4.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:1000px;
-  height:1000px;
-  margin: 150px 0 0 2px;
-  animation: roll 5s infinite;
-  transform: rotate(180deg);
-  display: inline-block;
-}
-
-@keyframes roll{
-  0%{
-    transform: rotate(360deg);
-  }
-
-    100%{
-      transform: rotate(0);
-  }
-}
-}
-
-#five{
-  background-image:url(pic/5.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:500px;
-  height:500px;
-  margin: -300px 0 0 -480px;
-}
-
-
-#six{
-  background-image:url(pic/6.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:600px;
-  height:600px;
-  margin: 1200px 0 0 -50px;
-  -webkit-animation:rotation 2s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(360deg);
-		}
-		to {
-				-webkit-transform: rotate(0deg);
-		}
-}
-
-
-#nine{
-  background-image:url(pic/9.png);
-  float: left;
-  position:fixed;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width:1000px;
-  height:1000px;
-  margin: -100px 0 0 2px;
-}
-
-#ten{
-  background-image:url(pic/10.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:1000px;
-  height:1000px;
-  margin: 500px 0 0 400px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: shimmy 2s infinite;
-  animation-direction: alternate;
-
-}
-
-@keyframes shimmy {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(69px, 200px);
-  }
-}
-
 #oneone{
   background-image:url(pic/11.png);
   background-size: contain;
@@ -208,11 +311,10 @@ body {
   background-repeat: no-repeat;
   float: left;
   position:fixed;
-  width:300px;
-  height:300px;
-  margin: -200px 0 0 -10px;
+  width:240px;
+  height:240px;
+  margin: -390px 0 0 -560px;
 }
-
 
 #onetwo{
   background-image:url(pic/12.png);
@@ -221,9 +323,9 @@ body {
   background-repeat: no-repeat;
   float: left;
   position:fixed;
-  width:200px;
-  height:200px;
-  margin: 1000px 0 0 -100px;
+  width:80px;
+  height:80px;
+  margin: 0px 0 0 -100px;
   -webkit-animation:rotation 1s infinite linear;
 }
 
@@ -232,27 +334,109 @@ body {
       -webkit-transform: rotate(360deg);
   }
   to {
-      -webkit-transform: rotate(40deg);
+      -webkit-transform: rotate(0deg);
   }
 }
+
+
+#onethree{
+  background-image:url(pic/13.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:80px;
+  height:80px;
+  margin:40px 0 0 -100px;
+  -webkit-animation:rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+#onefour{
+  background-image:url(pic/14.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:90px;
+  height:90px;
+  margin: 209px 0 0 -100px;
+  -webkit-animation:rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(-360deg);
+  }
+}
+
+#onefive{
+  background-image:url(pic/15.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:390px;
+  height:390px;
+  margin: 209px 0 0 -100px;
+  -webkit-animation:rotation 4s infinite linear;
+  }
+
+  @-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(60deg);
+  }
+  }
+
+#onesix{
+  background-image:url(pic/16.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  position:fixed;
+  width:200px;
+  height:200px;
+  margin: 209px 0 0 -100px;
+}
+
 </style>
 
+
 <body>
+<div id="one"></div>
+<div id="two"></div>
 <div id="three"></div>
 <div id="four"></div>
-<div id="five"></div>
-<div id="oneone"></div>
-<div id="oneoneone"></div>
 <div id="six"></div>
-<div id="ten"></div>
+<div id="oneone"></div>
+<div id="five"></div>
+<div id="seven"></div>
+<div id="eight"></div>
 <div id="nine"></div>
-<div id="two"></div>
+<div id="ten"></div>
 <div id="onetwo"></div>
-<div id="element"></div>
-
-
-
-
+<div id="onethree"></div>
+<div id="onefour"></div>
+<div id="onefive"></div>
+<div id="onesix"></div>
 
 </body>
 </html>
