@@ -1,442 +1,98 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Project 2</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
-</head>
+    <head>
+      <title> 杭思妤的地盘</title>
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+      <style>
 
-<style>
-body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  animation: colors 10s ease-in alternate infinite forwards;
-}
+    body{
+      background-image:url(lover.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      color:#d6d6c2;
+      font-size: 18px;
+      text-align: right;
+    }
 
-@keyframes colors{
-  0% {
-        background:#e6f7ff;
+    .text{
+      font-family: 'Permanent Marker', cursive;
+    }
+
+    h2{
+      font-size: 50px;
+      color:#009900;
+    }
+
+    h1{
+      font-size: 100px;
+      font-style: italic;
+      text-align: center;
+      color: #cc6699;
+    }
+  a{
+    font-size: 19px;
   }
+    </style>
+    </head>
 
-  15%{
-       filter: contrast(90%);
-  }
-  100% {
-       background:#BFD294;
-  }
-}
+    <body>
+      <div class="text">
+      <h1>🌼STUDIO🌼</h1>
+      <h2>EXERCISES</h2>
+      <a href="exercise1/index.html">Exercise1</a>
+      <a href="exercise2/index.html">Exercise2</a>
+      <a href="exercise3/index.html">Exercise3</a>
+      <a href="exercise4/index.html">Exercise4</a>
+      <a href="exercise5/index.html">Exercise5</a>
 
-#one{
-  background-image:url(pic/1.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:400px;
-  height:400px;
-  margin: 10px 0 0 2px;
-  animation: roll 350s infinite;
-  transform: rotate(30deg);
-  display: inline-block;
-}
 
-@keyframes roll{
-  0%{
-    transform: rotate(0);
-  }
+        <h2>READINGS</h2>
+        <a href="reading1/index.html">Reading1</a>
+        <a href="reading2/index.html">Reading2</a>
+        <a href="reading3/index.html">Reading3</a>
+        <a href="reading4/index.html">Reading4</a>
+        <a href="reading5/index.html">Reading5</a>
+        <a href="reading6/index.html">Reading6</a>
+        <a href="reading7/index.html">Reading7</a>
+        <a href="reading8/index.html">Reading8</a>
+        <a href="reading9/index.html">Reading9</a>
+        <a href="reading10/index.html">Reading10</a>
+        <a href="reading11/index.html">Reading11</a>
+        <a href="reading12/index.html">Reading12</a>
 
-    20%{
-      transform: rotate(360deg);
-  }
-}
 
-#two{
-  background-image:url(pic/2.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:200px;
-  height:200px;
-  margin: -570px 0 0 420px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: shimmy 1s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes shimmy {
-  0% {
-    transform: translate(2px, 0);
-  }
-  100% {
-    transform: translate(-90px, 30px);
-  }
-}
-
-#ten{
-  background-image:url(pic/10.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:200px;
-  height:200px;
-  margin: 420px 0 0 550px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: ten 3s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes ten {
-  0% {
-    transform: translate(2px, 0);
-  }
-  100% {
-    transform: translate(0, 30px);
-  }
-}
-
-#four{
-  background-image:url(pic/4.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:200px;
-  height:200px;
-  margin: 500px 0 0 -700px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: four 2s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes four{
-  0% {
-    transform: translate(2px, 0);
-  }
-  100% {
-    transform: translate(-10px, 0);
-  }
-}
-
-#five{
-  background-image:url(pic/5.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:200px;
-  height:200px;
-  margin: -570px 0 0 -180px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: shimmy 2s infinite;
-  animation-direction: alternate;
-
-}
-
-@keyframes shimmy {
-  0% {
-    transform: translate(2px, 0);
-  }
-  100% {
-    transform: translate(-20px, 30px);
-  }
-}
+        <h2>Project One</h2>
+        <a href="project1/cover.html">🎮</a>
 
 
 
-#six{
-  background-image:url(pic/6.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:200px;
-  height:200px;
-  margin: 100px 0 0 -800px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: shimmy 2s infinite;
-  animation-direction: alternate;
-
-}
-
-@keyframes shimmy {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(15px, 40px);
-  }
-}
-
-#eight{
-  background-image:url(pic/8.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:280px;
-  height:280px;
-  margin: -100px 0 0 900px;
-  display: flex;
-  text-align: center;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: eight 4s infinite;
-  animation-direction: alternate;
-
-}
-
-@keyframes eight {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100px, 0px);
-  }
-}
-
-#seven{
-  background-image:url(pic/7.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:300px;
-  height:300px;
-  margin: 540px 0 0 -50px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: seven 2s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes seven {
-  40% {
-    transform: translate(-20px, 10px);
-  }
-  100% {
-    transform: translate(20px, 10px);
-  }
-}
+  <h2>Project Two</h2>
+    <a href="project2/index.html">🌀</a>
 
 
-#nine{
-  background-image:url(pic/9.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:300px;
-  height:300px;
-  margin: 60px 0 0 1200px;
-  display: flex;
-  text-align: center;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  animation: eight 2s infinite;
-  animation-direction: alternate;
 
-}
-
-@keyframes eight {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50px, 2px);
-  }
-}
-
-#three{
-  background-image:url(pic/3.png);
-  float: left;
-  position:fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:1000px;
-  height:1000px;
-  margin: 150px 0 0 2px;
-  -webkit-animation:rotation 20s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
-}
-
-#oneone{
-  background-image:url(pic/11.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:240px;
-  height:240px;
-  margin: -390px 0 0 -560px;
-}
-
-#onetwo{
-  background-image:url(pic/12.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:80px;
-  height:80px;
-  margin: 0px 0 0 -100px;
-  -webkit-animation:rotation 1s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-  from {
-      -webkit-transform: rotate(360deg);
-  }
-  to {
-      -webkit-transform: rotate(0deg);
-  }
-}
+<h1>🌼LAB🌼</h1>
+<h2>EXERCISES</h2>
+<a href="one/index.html">Exercise1</a>
+<a href="two/index.html">Exercise2</a>
+<a href="three/index.html">Exercise3</a>
+<a href="four/index.html">Exercise4</a>
+<a href="five/index.html">Exercise5</a>
 
 
-#onethree{
-  background-image:url(pic/13.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:80px;
-  height:80px;
-  margin:40px 0 0 -100px;
-  -webkit-animation:rotation 2s infinite linear;
-}
+<h2>READINGS</h2>
+<a href="r1/index.html">Reading1</a>
+<a href="r2/index.html">Reading2</a>
+<a href="r3/index.html">Reading3</a>
+<a href="r4/index.html">Reading4</a>
+<a href="r5/index.html">Reading5</a>
 
-@-webkit-keyframes rotation {
-  from {
-      -webkit-transform: rotate(0deg);
-  }
-  to {
-      -webkit-transform: rotate(360deg);
-  }
-}
-
-#onefour{
-  background-image:url(pic/14.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:90px;
-  height:90px;
-  margin: 209px 0 0 -100px;
-  -webkit-animation:rotation 2s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-  from {
-      -webkit-transform: rotate(0deg);
-  }
-  to {
-      -webkit-transform: rotate(-360deg);
-  }
-}
-
-#onefive{
-  background-image:url(pic/15.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:390px;
-  height:390px;
-  margin: 209px 0 0 -100px;
-  -webkit-animation:rotation 4s infinite linear;
-  }
-
-  @-webkit-keyframes rotation {
-  from {
-      -webkit-transform: rotate(0deg);
-  }
-  to {
-      -webkit-transform: rotate(60deg);
-  }
-  }
-
-#onesix{
-  background-image:url(pic/16.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  float: left;
-  position:fixed;
-  width:200px;
-  height:200px;
-  margin: 209px 0 0 -100px;
-}
-
-</style>
+<h2>PORJECT</h2>
+<a href="project one/cover.html">🌻</a>
 
 
-<body>
-<div id="one"></div>
-<div id="two"></div>
-<div id="three"></div>
-<div id="four"></div>
-<div id="six"></div>
-<div id="oneone"></div>
-<div id="five"></div>
-<div id="seven"></div>
-<div id="eight"></div>
-<div id="nine"></div>
-<div id="ten"></div>
-<div id="onetwo"></div>
-<div id="onethree"></div>
-<div id="onefour"></div>
-<div id="onefive"></div>
-<div id="onesix"></div>
 
-</body>
-</html>
+    </body>
+
+
+      </html>
